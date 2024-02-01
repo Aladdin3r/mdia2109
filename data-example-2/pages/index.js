@@ -11,8 +11,29 @@ export default function Home() {
       <Head>
 
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-       
+      <main className={`${styles.main}`}>
+       {
+        item.inventory.books && item.inventory.books.map((i, index) => {
+          return(
+            <div key={index}>
+              {i.yearPublished}
+            </div>
+          )
+        })
+       }
+
+        {/** grab the title of the book ONLY above the year 2010 */}
+       {
+        item.inventory.books && item.inventory.books.map((i, index) => {
+          if(i.yearPublished > 2010) {
+              return(
+              <div key={index}>
+                {i.title} 
+              </div>
+              )
+          }
+        })
+       }
       </main>
     </>
   );
