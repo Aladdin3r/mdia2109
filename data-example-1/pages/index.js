@@ -10,7 +10,15 @@ export default function Home() {
   return (
     <>
       <main className={`${styles.main}`}>
-        
+       {
+        item && item.map((i, index) => {
+          return(
+            <div key={index}>
+              {i.yearPublished}
+            </div>
+          )
+        })
+       } 
       </main>
     </>
   );
