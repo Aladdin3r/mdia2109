@@ -1,0 +1,14 @@
+export const bookstore = {
+    books: [
+        {
+            title: "Design Patterns - Elements of Reusable Object-Oriented Software",
+            authors: ["Enrich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"],
+            category: "OOP"
+        },
+        {
+            title: "Java 8 in Action",
+            authors: ["Raoul-Gabriel Urma", "Mario Fusco", "Alan Mycroft"],
+            category: "Java"
+        } 
+    ]
+}
