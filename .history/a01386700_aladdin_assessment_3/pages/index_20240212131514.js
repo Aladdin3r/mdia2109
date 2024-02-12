@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>BCIT Book Store</title>
+        <title>Assessment 3</title>
         <meta name="description" content=" All online pick-up orders are available at the Burnaby Campus Bookstore
 (SE2). Please allow 2-3 business days for order processing." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
