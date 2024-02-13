@@ -29,7 +29,7 @@ export default function Home() {
         <button onClick={() => addingData()}>Click Me</button>
         {
           data && data.books.map((b, index) => {
-            if(b.edition === 5) {
+            if(b.edition === 6) {
               return(
                 <div key={index}>
                   <h1>{b.title}</h1>
@@ -42,7 +42,7 @@ export default function Home() {
                       )
                     })
                   }
-                    <img src={b.image} alt={b.title} />
+                    <img src="">
                 </div>
               )
             }

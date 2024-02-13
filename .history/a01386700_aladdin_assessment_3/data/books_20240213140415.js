@@ -71,4 +71,4 @@ export const inventory = {
             image: "./books/computer-networking.jpg"
         }
     ]
-}
+}a
