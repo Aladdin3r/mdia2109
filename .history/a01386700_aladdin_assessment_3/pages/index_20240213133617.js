@@ -42,7 +42,15 @@ export default function Home() {
                       )
                     })
                   }
-                    {b.image}
+                  {
+                    b.authors && b.authors.map((a, ind) => {
+                      return(
+                        <div key={ind}>
+                          {a}
+                        </div>
+                      )
+                    })
+                  }
                 </div>
               )
             }

@@ -42,7 +42,9 @@ export default function Home() {
                       )
                     })
                   }
-                    {b.image}
+                  {
+                    
+                  }
                 </div>
               )
             }

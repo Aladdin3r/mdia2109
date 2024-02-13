@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { inventory } from "@/data/books";
 import { useState } from "react";
 
+
 export default function Home() {
 
   const [data, setData] = useState();

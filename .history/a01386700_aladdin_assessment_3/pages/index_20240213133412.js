@@ -26,7 +26,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <button onClick={() => addingData()}>Click Me</button>
         {
           data && data.books.map((b, index) => {
             if(b.edition == 6) {
@@ -34,15 +33,8 @@ export default function Home() {
                 <div key={index}>
                   <h1>{b.title}</h1>
                   {
-                    b.authors && b.authors.map((a, ind) => {
-                      return(
-                        <div key={ind}>
-                          {a}
-                        </div>
-                      )
-                    })
+                    b.
                   }
-                    {b.image}
                 </div>
               )
             }

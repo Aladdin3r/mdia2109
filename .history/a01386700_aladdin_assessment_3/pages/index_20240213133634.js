@@ -42,7 +42,15 @@ export default function Home() {
                       )
                     })
                   }
-                    {b.image}
+                  {
+                    b.image => {
+                      return(
+                        <div key={ind}>
+                          {a}
+                        </div>
+                      )
+                    })
+                  }
                 </div>
               )
             }
