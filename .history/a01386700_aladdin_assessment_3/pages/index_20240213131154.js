@@ -15,9 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <div>Content Filler</div>
+        
       </main>
-      <Footer/>
     </>
   );
 }
