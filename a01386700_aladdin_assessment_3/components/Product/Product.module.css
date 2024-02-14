@@ -5,20 +5,18 @@
     text-decoration: none;
     color: #000;
 }
-.item {
+.item>a {
     text-decoration: none;
     color: #000;
 }
-.item:hover {
+.item >a:hover {
     text-decoration: underline;
     font-weight: bold;
-    text-decoration: none;
     color: #000;
 }
 
 .item:active {
     text-decoration: underline;
     font-weight: bold;
-    text-decoration: none;
     color: #000;
 }
