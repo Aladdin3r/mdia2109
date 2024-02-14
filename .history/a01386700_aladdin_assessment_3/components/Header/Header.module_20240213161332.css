@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+ul.headerlist {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
