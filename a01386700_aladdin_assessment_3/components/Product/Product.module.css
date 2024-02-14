@@ -1,0 +1,24 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #000;
+}
+.item {
+    text-decoration: none;
+    color: #000;
+}
+.item:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.item:active {
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}

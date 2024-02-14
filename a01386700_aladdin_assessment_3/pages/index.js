@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { inventory } from "@/data/books";
 import { useState } from "react";
+import Product from "@/components/Product";
 
 export default function Home() {
 
@@ -28,29 +29,32 @@ export default function Home() {
       </Head>
       <Header />
       <main className={`${styles.main}`}>
-        <button onClick={() => addingData()}>Click Me</button>
-        {
-          data && data.books.map((b, index) => {
-            if(b.edition === 10) {
-              return(
-                <div key={index}>
-                  <h1>{b.title}</h1>
-                  {
-                    b.authors && b.authors.map((a, ind) => {
-                      return(
-                        <div key={ind}>
-                          {a}
-                        </div>
-                      )
-                    })
-                  }
-                    <img src={b.image} alt={b.title} />
-                </div>
-              )
-            }
-          })  
-          
-        }
+        <div><Product/></div>
+        <div>
+          <button onClick={() => addingData()}>Click Me</button>
+          {
+            data && data.books.map((b, index) => {
+              if(b.edition === 10) {
+                return(
+                  <div key={index}>
+                    <h1>{b.title}</h1>
+                    {
+                      b.authors && b.authors.map((a, ind) => {
+                        return(
+                          <div key={ind}>
+                            {a}
+                          </div>
+                        )
+                      })
+                    }
+                      <img src={b.image} alt={b.title} />
+                  </div>
+                )
+              }
+            })  
+            
+          }
+        </div>
       </main>
       <Footer/>
     </>

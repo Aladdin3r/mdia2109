@@ -7,8 +7,7 @@
 
 ul.headerlist {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: space-between;
-    justify-items: center;
     list-style-type: none;
 }
