@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+ul.headerlist {
+    display: flex;
+    ga
+    justify-content: space-between;
+    list-style-type: none;
+}

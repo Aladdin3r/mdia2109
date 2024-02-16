@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+ul.headerlist {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    list-style-type: none;
+}

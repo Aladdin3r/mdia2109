@@ -58,7 +58,7 @@ export default function Home() {
             backgroundColor: 'red',
             borderRadius: '50%',
             transform: `translate(${position.x}px, ${position.y}px)`,
-            left: 0,
+            left: 0,  
             top: -450,
             width: 20,
             height: 20

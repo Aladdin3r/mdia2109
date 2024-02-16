@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+ul.headerlist {
+    display: flex;
+    list-style-type: none;
+}

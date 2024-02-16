@@ -1,0 +1,22 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #000;
+}
+.item>a {
+    text-decoration: none;
+    color: #000;
+}
+.item >a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #000;
+}
+
+.item:active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #000;
+}
