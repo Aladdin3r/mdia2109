@@ -1,22 +1,18 @@
 .product {
+    margin-left: 10%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-decoration: none;
-    color: #000;
-}
-.item>a {
-    text-decoration: none;
-    color: #000;
-}
-.item >a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #000;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.item:active {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #000;
+.book {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--product-background);
+    padding: 3%;
+    flex-direction: column;
+}
+
+.book:hover {
+    border: solid var(--highlight);
 }

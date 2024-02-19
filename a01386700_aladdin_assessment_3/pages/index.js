@@ -2,18 +2,27 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { inventory } from "@/data/books";
-import { useState } from "react";
 import Product from "@/components/Product";
+import { useState } from "react";
+import Button from "@/components/Button";
 
 export default function Home() {
+  const [showAll, setShowAll] = useState(false);
+  const [activeLink, setActiveLink] = useState(null);
+  const [showButton, setShowButton] = useState(false);
 
-  const [data, setData] = useState();
+  const makeSetActiveLink = (link) => {
+    setActiveLink(link);
+  }
 
-  const addingData = () => {
-    console.log("here");
-    setData(inventory);
-    console.log(inventory);
+  const showAllBooks = () => {
+    setShowAll(true);
+    makeSetActiveLink('all');
+    makeButtonVisible();
+  }
+  
+  const makeButtonVisible = () => {
+    setShowButton(true);
   }
 
   return (
@@ -28,33 +37,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <div className={styles.tab}>
+          <div className={`${styles.item} ${activeLink === 'all' ? styles.active : ''}`} onClick={showAllBooks}>
+            <p>All</p>
+          </div>
+          <div className={`${styles.item} ${activeLink === 'communications' ? styles.active: ''}`} onClick={() => makeSetActiveLink('communications')}>
+            <p>Communications</p>
+          </div>
+          <div className={`${styles.item} ${activeLink === 'computerScience' ? styles.active: ''}`} onClick={() => makeSetActiveLink('computerScience')}>
+            <p>Computer Science</p>
+          </div>
+          <div className={`${styles.item} ${activeLink === 'marketing' ? styles.active: ''}`} onClick={() => makeSetActiveLink('marketing')}>
+            <p>Marketing</p>
+          </div> 
+          <div className={`${styles.item} ${activeLink === 'math' ? styles.active: ''}`} onClick={() => makeSetActiveLink('math')}>
+            <p>Math</p>
+          </div>
+      </div>
+      {showButton && <Button isVisible={showButton}/>}
       <main className={`${styles.main}`}>
-        <div><Product/></div>
-        <div>
-          <button onClick={() => addingData()}>Click Me</button>
-          {
-            data && data.books.map((b, index) => {
-              if(b.edition === 10) {
-                return(
-                  <div key={index}>
-                    <h1>{b.title}</h1>
-                    {
-                      b.authors && b.authors.map((a, ind) => {
-                        return(
-                          <div key={ind}>
-                            {a}
-                          </div>
-                        )
-                      })
-                    }
-                      <img src={b.image} alt={b.title} />
-                  </div>
-                )
-              }
-            })  
-            
-          }
-        </div>
+        <Product 
+          showAll={showAll} 
+          activeLink={activeLink} 
+          makeSetActiveLink={makeSetActiveLink}
+        />
       </main>
       <Footer/>
     </>

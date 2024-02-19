@@ -6,3 +6,30 @@
   padding: 6rem;
   min-height: 20vh;
 }
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 20%;
+  padding: 4vw;
+  color: #000;
+  z-index: 1;
+}
+.item>p {
+  text-decoration: none;
+  color: #000;
+}
+.item p:hover, .item.active p {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000;
+}
+
+.item:active {
+  text-decoration: underline;
+  font-weight: bold;
+}
