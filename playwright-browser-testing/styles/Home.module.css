@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 20vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--red);
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .container {
+    width: 100vw;
+  height: 100vh;
+  background-color: var(--orange);
+  }
+}
+
+/* tablet or smaller than desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .container {
+    width: 100vw;
+  height: 100vh;
+  background-color: var(--yellow);
+  }
+}
