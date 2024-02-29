@@ -1,29 +1,29 @@
+// Home.js
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Product from "@/components/Product";
-import { useState } from "react";
+import React, { useState } from "react";
 import Button from "@/components/Button";
 
 export default function Home() {
   const [showAll, setShowAll] = useState(false);
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState(null); // Set initial active link as null
   const [showButton, setShowButton] = useState(false);
+  const [sortedBooks, setSortedBooks] = useState([]);
 
   const makeSetActiveLink = (link) => {
+    console.log("Setting active link:", link);
     setActiveLink(link);
-  }
+    setShowAll(link === 'all'); // Set showAll to true if 'all' tab is clicked, otherwise false
+    setShowButton(link !== null); // Show the button if any tab is clicked
+  };
 
-  const showAllBooks = () => {
-    setShowAll(true);
-    makeSetActiveLink('all');
-    makeButtonVisible();
-  }
-  
-  const makeButtonVisible = () => {
-    setShowButton(true);
-  }
+  console.log("State - showAll:", showAll);
+  console.log("State - activeLink:", activeLink);
+  console.log("State - showButton:", showButton);
+  console.log("State - sortedBooks:", sortedBooks);
 
   return (
     <>
@@ -38,7 +38,7 @@ export default function Home() {
       </Head>
       <Header />
       <div className={styles.tab}>
-          <div className={`${styles.item} ${activeLink === 'all' ? styles.active : ''}`} onClick={showAllBooks}>
+          <div className={`${styles.item} ${activeLink === 'all' ? styles.active : ''}`} onClick={() => makeSetActiveLink('all')}>
             <p>All</p>
           </div>
           <div className={`${styles.item} ${activeLink === 'communications' ? styles.active: ''}`} onClick={() => makeSetActiveLink('communications')}>
@@ -54,13 +54,10 @@ export default function Home() {
             <p>Math</p>
           </div>
       </div>
-      {showButton && <Button isVisible={showButton}/>}
+      {showButton && <Button isVisible={showButton} setSortedBooks={setSortedBooks} setShowAll={setShowAll} activeLink={activeLink} />}
       <main className={`${styles.main}`}>
-        <Product 
-          showAll={showAll} 
-          activeLink={activeLink} 
-          makeSetActiveLink={makeSetActiveLink}
-        />
+        {console.log("Sorted books:", sortedBooks)}
+        {activeLink !== null && <Product showAll={showAll} activeLink={activeLink} sortedBooks={sortedBooks} />}
       </main>
       <Footer/>
     </>
