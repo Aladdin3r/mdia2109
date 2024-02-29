@@ -25,3 +25,25 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .buttons {
+        display: flex;
+        position: absolute;
+        right: 20%;
+        top: 13%; /* Adjust the top position as needed */
+        padding: 1%;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .buttons {
+        display: flex;
+        position: absolute;
+        right: 35%;
+        top: 60%; /* Adjust the top position as needed */
+        padding: 1%;
+        gap: 1rem;
+    }
+}

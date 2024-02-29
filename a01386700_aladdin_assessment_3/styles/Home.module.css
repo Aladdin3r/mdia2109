@@ -33,3 +33,54 @@
   text-decoration: underline;
   font-weight: bold;
 }
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .main {
+    padding: 2rem;
+    padding-top: 7rem;
+    padding-left: 6rem;
+  }
+
+  .tab {
+    position: fixed;
+    width: auto;
+    margin: 0 auto;
+    transform: none;
+    top: auto;
+    left: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; 
+  }
+
+  .item {
+    margin-right: 10px;
+    margin-bottom: 10px; 
+  }
+
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .tab {
+    position: absolute;
+    top: 250px; /* Adjust the top position according to your header height */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the tab appears above other content */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.main {
+    margin-top: 15rem; /* Adjust as needed to avoid overlapping with the fixed tab */
+}
+}
