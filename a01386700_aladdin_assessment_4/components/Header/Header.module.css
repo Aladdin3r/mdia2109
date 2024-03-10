@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+ul.list {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    align-items: center;
+}
+
+.bar {
+    transform: scaleX(-1);
+    position: absolute;
+    padding: 1rem;
+    right: 0;
+    top: 0;
+}
+
+.links {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.activeLink {
+    color: var(--black);
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+    text-decoration-thickness: 2px;
+}

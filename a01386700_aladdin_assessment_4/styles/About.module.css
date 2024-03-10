@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6vw;
+    min-height: 20vh;
+  }
+
+.topdiv {
+    margin-bottom: 3vh;
+}
+
+.heading {
+    position: absolute;
+    z-index: 2;
+    top: 15.5vh;
+    font-size: 2.5vw;
+    left: 46.5vw;
+}
+
+.campusimageabout {
+    z-index: -1;
+    margin-left: 1.7vw;
+    margin-top: 3vh;
+}
+
+.aboutp {
+    position: absolute;
+    top: 25vh;
+    left: 50vw;
+    width: 37%;
+}

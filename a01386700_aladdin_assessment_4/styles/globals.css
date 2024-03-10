@@ -16,3 +16,15 @@
 --font-medium: 1.5em;
 --font-regular: 1em;
 }
+
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-color); 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue); 
+}

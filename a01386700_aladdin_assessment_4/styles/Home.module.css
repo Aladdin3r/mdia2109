@@ -3,7 +3,81 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 20vh;
+  padding: 6vw;
+  min-height: 70vh;
 }
 
+.topdiv {
+  padding-bottom: 38vh;
+}
+
+.heading1 {
+  z-index: 2;
+  position: absolute;
+  left: 29.3%;
+  top: 17vh;
+  font-size: 3vw;
+}
+
+.firstp {
+  z-index: 2;
+  position: absolute;
+  left: 23%;
+  text-align: right;
+  top: 30vh;
+  width: 23vw;
+}
+.campusimage {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 15vh;
+}
+
+
+.button {
+  background-color: var(--transparent);
+  border: 2px solid var(--yellow);
+  padding: 0.65rem;
+  z-index: 2;
+  position: absolute;
+  top: 45vh;
+  left: 28%;
+}
+
+.heading2 {
+  position: absolute;
+  z-index: 2;
+  left: 36.3%;
+  bottom: 28vh;
+}
+
+.photo2 {
+  transform: scaleX(-1);
+  z-index: -1;
+  position:absolute;
+  left: 30%;
+  bottom: 16vh;
+}
+
+.secondp {
+  position: absolute;
+  width: 11vw;
+  text-align: right;
+  bottom: 21vh;
+  right: 25%;
+}
+
+.photo1 {
+  position: absolute;
+  right: 21%;
+  bottom: 16vh;
+}
+
+.buttonlink {
+  text-decoration: none;
+  color: var(--black);
+}
+.button:hover {
+  background-color: var(--yellow);
+}
