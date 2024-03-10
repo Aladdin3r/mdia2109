@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul.list {
+    display: flex;
+    gap: 4rem;
+    justify-content: baseline;
+    list-style-type: none;
+}

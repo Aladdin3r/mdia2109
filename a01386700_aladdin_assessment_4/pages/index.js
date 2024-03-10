@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -12,8 +12,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        
+        <div>
+          <h1>Welcome to BCIT</h1>
+        </div>
+        <div>
+          <h2>Ready to Apply?</h2>
+        </div>
       </main>
+      <Footer/>
     </>
   );
 }
