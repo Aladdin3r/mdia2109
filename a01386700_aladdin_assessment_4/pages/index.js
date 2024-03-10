@@ -1,16 +1,11 @@
-import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Footer from "@/components/Footer";
+import HeadArea from "@/components/HeadArea";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Home</title>
-        <meta name="description" content="BCIT offers over 300 programs and 1000 part-time courses in 6 general areas of study. Search or browse our catalogues to find the right fit for the next step in your career." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <HeadArea/>
       <main className={`${styles.main}`}>
         <div>
           <h1>Welcome to BCIT</h1>
