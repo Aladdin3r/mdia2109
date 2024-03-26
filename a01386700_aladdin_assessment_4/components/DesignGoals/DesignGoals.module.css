@@ -17,3 +17,15 @@
     align-items: center;
     font-size: 2rem;
 }
+
+.listItem {
+    display: none;
+}
+
+.listItem.active {
+    display: block;
+}
+
+.activeNumber {
+    color: var(--light-gray);
+}
