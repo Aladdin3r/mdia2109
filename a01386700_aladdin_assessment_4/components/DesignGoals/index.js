@@ -9,7 +9,7 @@ export default function DesignGoals() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentGoalIndex(prevIndex => (prevIndex + 1) % goals.length);
-        }, 2000);
+        }, 3000);
 
         return () => clearInterval(interval);
     }, [goals]);
