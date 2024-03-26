@@ -17,6 +17,7 @@ export default function Form() {
                 </div>
                 <input type="submit" value="Submit" className={styles.submit}/>
             </form>
+            <p className={styles.feedback}>Thank you, your form has been submitted</p>
         </>
     )
 }

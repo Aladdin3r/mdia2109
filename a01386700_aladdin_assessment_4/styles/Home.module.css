@@ -14,9 +14,9 @@
 .heading1 {
   z-index: 2;
   position: absolute;
-  left: 29.3%;
+  left: 22.5%;
   top: 17vh;
-  font-size: 3vw;
+  font-size: var(--font-h1);
 }
 
 .firstp {
@@ -26,6 +26,7 @@
   text-align: right;
   top: 30vh;
   width: 23vw;
+  font-size: var(--font-regular);
 }
 .campusimage {
   z-index: -1;
@@ -48,8 +49,9 @@
 .heading2 {
   position: absolute;
   z-index: 2;
-  left: 36.3%;
-  bottom: 28vh;
+  left: 35.5%;
+  bottom: 24vh;
+  font-size: var(--font-h2);
 }
 
 .photo2 {
@@ -66,6 +68,7 @@
   text-align: right;
   bottom: 21vh;
   right: 25%;
+  font-size: var(--font-regular);
 }
 
 .photo1 {

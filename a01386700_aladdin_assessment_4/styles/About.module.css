@@ -15,7 +15,7 @@
     position: absolute;
     z-index: 2;
     top: 15.5vh;
-    font-size: 2.5vw;
+    font-size: var(--font-h2);
     left: 46.5vw;
 }
 
@@ -30,4 +30,5 @@
     top: 25vh;
     left: 50vw;
     width: 37%;
+    font-size: var(--font-regular);
 }
