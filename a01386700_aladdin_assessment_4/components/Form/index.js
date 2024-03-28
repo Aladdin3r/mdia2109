@@ -44,6 +44,7 @@ export default function Form() {
         <>
             {!formSubmitted && (
                 <>
+                <div className={styles.component}>
                     <p className={styles.formlabel}>Have any questions?</p>
                     <form className={styles.form} onSubmit={handleSubmit}>
                         <label htmlFor="fname">First Name:</label>
@@ -60,6 +61,7 @@ export default function Form() {
                             <input type="submit" value="Submit" className={styles.submit}/>
                         )}
                     </form>
+                </div>
                 </>
             )}
             {formSubmitted && (

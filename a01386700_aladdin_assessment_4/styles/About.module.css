@@ -32,3 +32,33 @@
     width: 37%;
     font-size: var(--font-regular);
 }
+@media (min-width: 701px) and (max-width: 1120px) {
+    .main {
+        min-height: 300vh;
+    }
+
+    .heading {
+        position: absolute;
+        z-index: 2;
+        top: 50vh;
+        font-size: var(--font-h2-tablet);
+        left: 15vw;
+    } 
+    .campusimageabout {
+        z-index: -1;
+        margin-left: 15%;
+        margin-right: auto;
+        margin-top: 3vh;
+        width: 70%;
+
+    }
+    
+    .aboutp {
+        position: absolute;
+        top: 55vh;
+        left: 15vw;
+        width: 40%;
+        font-size: var(--font-regular);
+    } 
+
+}

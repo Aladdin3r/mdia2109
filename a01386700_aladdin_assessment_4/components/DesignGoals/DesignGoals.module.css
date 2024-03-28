@@ -29,3 +29,14 @@
 .activeNumber {
     color: var(--light-gray);
 }
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 3vh;
+        align-items: center;
+        margin-top: 18vh;
+    }  
+}

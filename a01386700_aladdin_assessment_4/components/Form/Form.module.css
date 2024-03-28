@@ -35,3 +35,12 @@
 .submit:hover {
     background-color: var(--yellow);
 }
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        gap: 0.25rem;
+    }
+}
