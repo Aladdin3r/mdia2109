@@ -1,0 +1,42 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 3vh;
+    align-items: baseline;
+}
+
+.label {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+}
+
+.numberlist {
+    align-items: center;
+    font-size: 2rem;
+}
+
+.listItem {
+    display: none;
+}
+
+.listItem.active {
+    display: block;
+}
+
+.activeNumber {
+    color: var(--light-gray);
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 3vh;
+        align-items: center;
+        margin-top: 18vh;
+    }  
+}

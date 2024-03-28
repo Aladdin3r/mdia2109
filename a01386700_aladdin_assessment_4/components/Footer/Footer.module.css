@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+}
+
+ul.list {
+    display: flex;
+    gap: 4rem;
+    justify-content: baseline;
+    list-style-type: none;
+}
+
+@media (max-width: 700px) {
+    .footer li:nth-last-child(-n+2) {
+        display: none;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 0;
+    }
+    ul.list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+}

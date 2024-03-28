@@ -1,0 +1,12 @@
+.heading {
+    position: absolute;
+    left: 30%;
+    top: 15%;
+}
+
+.formalign {
+    margin-top: 15vh;
+    margin-left: 60vw;
+    margin-bottom: 15%;
+    width: 100%;
+}

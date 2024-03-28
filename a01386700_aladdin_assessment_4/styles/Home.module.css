@@ -3,7 +3,226 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 20vh;
+  padding: 6vw;
+  min-height: 70vh;
 }
 
+.topdiv {
+  padding-bottom: 38vh;
+}
+
+.heading1 {
+  z-index: 2;
+  position: absolute;
+  left: 22.5%;
+  top: 17vh;
+  font-size: var(--font-h1);
+}
+
+.firstp {
+  z-index: 2;
+  position: absolute;
+  left: 23%;
+  text-align: right;
+  top: 30vh;
+  width: 23vw;
+  font-size: var(--font-regular);
+}
+.campusimage {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 15vh;
+}
+
+
+.button {
+  background-color: var(--transparent);
+  border: 2px solid var(--yellow);
+  padding: 0.65rem;
+  z-index: 2;
+  position: absolute;
+  top: 45vh;
+  left: 28%;
+}
+
+.heading2 {
+  position: absolute;
+  z-index: 2;
+  left: 35.5%;
+  bottom: 24vh;
+  font-size: var(--font-h2);
+}
+
+.photo2 {
+  transform: scaleX(-1);
+  z-index: -1;
+  position:absolute;
+  left: 30%;
+  bottom: 16vh;
+}
+
+.secondp {
+  position: absolute;
+  width: 11vw;
+  text-align: right;
+  bottom: 21vh;
+  right: 25%;
+  font-size: var(--font-regular);
+}
+
+.photo1 {
+  position: absolute;
+  right: 21%;
+  bottom: 16vh;
+}
+
+.buttonlink {
+  text-decoration: none;
+  color: var(--black);
+}
+.button:hover {
+  background-color: var(--yellow);
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+  .heading1 {
+    z-index: 2;
+    position: absolute;
+    left: 7%;
+    top: 10vh;
+    font-size: var(--font-h1-tablet);
+  }
+  .firstp {
+    z-index: 2;
+    position: absolute;
+    left: 7%;
+    text-align: left;
+    top: 19vh;
+    width: 23vw;
+    font-size: var(--font-regular);
+  }
+  .campusimage {
+    z-index: -1;
+    position: absolute;
+    height: 20vh;
+    right: 0;
+    top: 38vh;
+  }
+  .button {
+    background-color: var(--transparent);
+    border: 2px solid var(--yellow);
+    padding: 0.65rem;
+    z-index: 2;
+    position: absolute;
+    top: 30vh;
+    left: 7%;
+  }
+  .heading2 {
+    position: absolute;
+    z-index: 2;
+    left: 70%;
+    bottom: 32vh;
+    font-size: var(--font-h2-tablet);
+  }
+  .photo2 {
+    transform: scaleX(1);
+    z-index: -1;
+    position:absolute;
+    left: 10%;
+    bottom: 15vh;
+    width: 50%;
+    height: 22%;
+
+  }
+  
+  .secondp {
+    position: absolute;
+    width: 25vw;
+    text-align: left;
+    bottom: 28vh;
+    right: 5%;
+    font-size: var(--font-regular);
+  }
+  
+  .photo1 {
+    position: absolute;
+    right: 5%;
+    bottom: 17vh;
+    width: 10%;
+    height: 8%;
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6vw;
+    min-height: 100vh;
+  }
+  .heading1 {
+    z-index: 2;
+    position: absolute;
+    left: 15%;
+    top: 15vh;
+    font-size: var(--font-h1-tablet);
+  }
+  .firstp {
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    left: 15%;
+    text-align: left;
+    top: 38vh;
+    width: 80vw;
+    font-size: var(--font-regular);
+  }
+  .campusimage {
+   display: none;
+  }
+  .button {
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+    font-size: var(--font-medium);
+    padding: 0.65rem;
+    z-index: 2;
+    position: absolute;
+    top: 50vh;
+    left: 15%;
+    width: 80%;
+  }
+  .heading2 {
+    position: absolute;
+    z-index: 2;
+    left: 25%;
+    bottom: 3vh;
+    font-size: var(--font-h2-tablet);
+    width: 100%;
+  }
+  .photo2 {
+    transform: scaleX(1);
+    z-index: -1;
+    position:absolute;
+    left: 25%;
+    bottom: 15vh;
+    width: 60%;
+    height: 22%;
+
+  }
+  
+  .secondp {
+    position: absolute;
+    width: 50vw;
+    text-align: center;
+    bottom: -8vh;
+    right: 20%;
+    font-size: var(--font-regular);
+  }
+  
+  .photo1 {
+    display: none;
+  }
+}
